@@ -1,0 +1,72 @@
+/* Jessica Harris
+ Overview of solution: 
+ simple stylesheet id's and classesare as organized as possible;
+ Key design features for the CSS page was the button styling because I had to figure out which color looked best
+ also the id and class messed me up for a bit but I had to take a break Ive been at this for 2 days!
+Testing for the Css file was really just trying to decipher what to put in CSS vs JS and i just went back and
+forth */
+body{
+	background-color: lightgreen;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+button{
+	background-color: red;
+	color: antiquewhite;
+	font-size: 20px;
+}
+
+h1{
+	margin: 10px 0px;
+	text-align: center;
+}
+
+
+
+/* "auto" ensures the puzzle is in the middle of webpage */
+.board {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* the actual board for the game containg the slidable puzzle pieces. */
+#puzzlearea {
+	width: 400px;
+	font-size: 32px;
+	height: 400px;
+	padding: 0px;
+	position: relative;
+}
+
+/* class is applied to the static pieces. including he background image saved as background.jpg*/
+.puzzlepiece{
+	background-image: url(Background.jpg);
+	border: 2px solid black;
+	height: 100px;
+	line-height: 100px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 100px;
+}
+
+/* This classfor the movable piece */
+.movablepiece:hover{
+	border-color: red;
+	color: #006600;
+	text-decoration: underline;
+}
+/* class set aside for the inspection checklist */
+.w3c{
+
+	border: none;
+	text-align: right;
+}
+
+#controls {
+	width: 400px;
+	padding-top: 10px;
+	text-align: center;
+}
